@@ -1,0 +1,900 @@
+
+/* reset css */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+input,
+botton,
+textarea{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	line-height: 1;
+}
+
+ul,li{
+	list-style: none;
+}
+
+input,button{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+/* 常用类 */
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.rl{
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrap{
+	width: 1170px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+/* 头部 */
+#head{
+	height: 33px;
+	width: 100%;
+	padding: 3px 0;
+	border-bottom: 1px solid #F2F2F2;
+	font-size: 12px;
+	line-height: 33px;
+	letter-spacing: 2px;
+}
+#head .head-right>li{
+	height: 33px;
+	float: left;
+	font-size: 0;
+	margin-left: 20px;
+	cursor: pointer;
+}
+#head .head-right li.usd{
+	margin-left: 40px;
+}
+#head .head-right span{
+	font-size: 12px;
+}
+#head .head-right .iconfont{
+	font-size: 14px;
+}
+#head .search-box input{
+	height: 26px;
+	width: 254px;
+	border: 1px solid #DFDFDF;
+	margin-top: -3px;
+	padding: 6px 34px 6px 10px;
+	font-size: 14px;
+	float: left;
+}
+#head .search-box a{
+	position: absolute;
+	left: 274px;
+	float: left;
+}
+#head .search-box>.iconfont{
+	color: #f00;
+	font-size: 18px;
+	float: left;
+}
+#head .search-box{
+	display: none;
+}
+#head .usd ul{
+	position: absolute;
+	left: -5px;
+	bottom: -95px;
+	background: #fff;
+	display: none;
+}
+#head .usd li{
+	border: 1px solid #DFDFDF;
+	height: 31px;
+	width: 53px;
+	border-top: none;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0;
+}
+/* 头部 */
+/* 导航 */
+ #search{
+	height: 94px;
+	line-height: 92px;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+#search>img{
+	margin-right: 222px;
+	margin-top: 30px;
+}
+/* 左边logo */
+.search-center>li{
+	float: left;
+	margin-right: 20px;
+}
+.search-center>li>a{
+	margin: 0 10px;
+}
+.h-line{
+	height: 2px;
+	width:  100%;
+	background:  #50B600;
+	position: relative;
+	top: -30px;
+	display: none;
+}
+.search-center>li:hover .h-line{
+	display: block;
+}
+#search  li.active .h-line{
+	display: block;
+}
+/* 中间导航 */
+ #search .number{
+	color: #50B600;
+	letter-spacing: 0;
+}
+#search>div:hover .number{
+	color: #333;
+} 
+/* 导航右边 */
+.search-center .home-hover{
+	width: 170px;
+	height: 217px;
+	line-height: 31px;
+	position: absolute;
+	left: 0;
+	bottom: -240px;
+	padding: 15px 0;
+	background: #fff;
+	box-shadow: 0 -4px 2px #F2F2F2;
+	display: none;
+	z-index: 10;
+}
+.home-hover>li{
+	width: 150px;
+	font-weight: normal;
+	color: #2F2F2F;
+	margin-left: 20px;
+}
+.home-hover .iconfont{
+	font-size: 12px;
+	position: absolute;
+	right: 20px;
+}
+.search-center>li:hover .home-hover{
+	display: block;
+}
+.home-hover ul{
+	width: 120px;
+	height: 114px;
+	position: absolute;
+	top: 0;
+	right: -155px;
+	background: #fff;
+	padding: 10px 20px 20px;
+	display: none;
+	box-shadow: -4px 0 2px #F2F2F2;
+}
+.home-hover li:hover ul{
+	display: block;
+}
+.home-hover a:hover{
+	color: #50B600;
+}
+/* 第一个弹出框 */
+.catalog-hover{
+	position: absolute;
+	left: 0;
+	top: 94px;
+	height: 330px;
+	width: 1140px;
+	background: #fff;
+	padding: 30px 15px;
+	box-shadow: 0 -4px 2px #F2F2F2;
+	display: none;
+	z-index: 10;
+}
+#search .catalog-hover ul{
+	float: left;
+	margin: 0 15px;
+	font-weight: normal;
+	line-height: 28px;
+	letter-spacing: 0;
+}
+.search-center>li:hover .catalog-hover{
+	display: block;
+}
+.catalog-hover a:hover{
+	color: #50B600;
+}
+/* 第二个弹出框 */
+.Collections-hover{
+	position: absolute;
+	left: 0;
+	top: 94px;
+	height: 219px;
+	width: 1140px;
+	padding: 30px 15px;
+	background: #fff;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 0 -4px 2px #F2F2F2;
+	display: none;
+	z-index: 10;
+}
+.Collections-hover img{
+	line-height: 1;
+}
+.Collections-hover li{
+	float: left;
+	margin: 0 15px;
+}
+#search  .Collections-hover a{
+	display: block;
+	line-height: 29px;
+}
+.Collections-hover a:hover p{
+	color: #50B600;
+}
+.search-center>li:hover .Collections-hover{
+	display: block;
+}
+/* 第三个弹出框 */
+.Sale-hover{
+	position: absolute;
+	left: 0;
+	top: 94px;
+	width: 1140px;
+	height: 255px;
+	padding: 40px 15px 30px;
+	background: #fff;
+	display: none;
+	box-shadow: 0 -4px 2px #F2F2F2;
+	z-index: 10;
+}
+#search .Sale-hover>li{
+	float: left;
+	line-height: 1;
+	padding: 0 15px;
+	position: relative;
+}
+.Sale-hover>li a{
+	display: block;
+}
+.Sale-hover>li a>div{
+	position: absolute;
+	left: 30px;
+	bottom: 15px;
+	width: 203px;
+	border: 1px solid #DFDFDF;
+	font-size: 14px;
+	padding: 12px 10px 14px;
+	font-weight: normal;
+	letter-spacing: 0;
+	background: #fff;
+	display: none;
+}
+#search .Sale-hover p{
+	line-height: 20px;
+}
+#search .Sale-hover p:hover{
+	color: #5FBC17;
+}
+#search .Sale-hover .price{
+	margin-top: 8px;
+}
+#search .Sale-hover .new-price{
+	color: #50B600;
+}
+#search .Sale-hover .old-price{
+	text-decoration: line-through;
+	color: #817A7B;
+}
+.search-center>li:hover .Sale-hover{
+	display: block;
+}
+#search .Sale-hover>li:hover div{
+	display: block;
+}
+/* 第四个弹出框 */
+.blog-hover{
+	position: absolute;
+	height: 333px;
+	width: 1140px;
+	left: 0;
+	top: 94px;
+	padding: 30px 15px;
+	background: #fff;
+	box-shadow: 0 -4px 2px #F2F2F2;
+	display: none;
+	z-index: 10;
+}
+.search-center>li:hover .blog-hover{
+	display: block;
+}
+.blog-hover li{
+	float: left;
+	width: 350px;
+	height: 333px;
+	line-height: 1;
+	margin: 0 15px;
+	position: relative;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+.blog-hover .list-one{
+	background: url(../images/blog1.png) no-repeat 0 0;
+	background-size: cover;
+}
+.blog-hover .list-two{
+	background: url(../images/blog2.png) no-repeat 0 0;
+	background-size: cover;
+}
+.blog-hover .list-three{
+	background: url(../images/blog3.png) no-repeat 0 0;
+	background-size: cover;
+}
+.blog-hover li div{
+	position: absolute;
+	top: 25px;
+	left: 30px;
+	background: #fff;
+	height: 42px;
+	width: 50px;
+	text-align: center;
+}
+.blog-hover li .day{
+	font-size: 18px;
+	margin-bottom: 7px;
+}
+.blog-hover li>a{
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	width: 300px;
+	font-size: 14px;
+	padding: 10px;
+	background: #fff;
+}
+/* 第五个弹出框 */
+.cart-hover{
+	width:437px;
+	position: absolute;
+	right: 0px;
+	top: 59px;
+	border: 1px solid #DFDFDF;
+	background: #fff;
+	z-index: 10;
+	line-height: 1;
+	padding: 25px 40px 10px;
+	overflow-y: scroll;
+	max-height: 80vh;
+	display: none;
+}
+.cart-hover p{
+	border: 1px solid #EDD870;
+	background: #FFF5C3;
+	color: #A3741F;
+	font-weight: normal;
+	letter-spacing: 0;
+	padding: 10px 15px;
+}
+#search>div:hover .cart-hover{
+	display: block;
+}
+/* 导航 */
+/* 广告 */
+#ad>img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.ad-center{
+	width: 1140px;
+	height:350px;
+	background: rgba(80,181,0,0.6);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -570px;
+	margin-top: -260px;
+	text-align: center;
+	color: #fff;
+	padding: 85px 0;
+}
+.ad-content h3{
+	font-size: 30px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.ad-content>p{
+	font-size: 120px;
+}
+.ad-button{
+	display: inline-block;
+	line-height: 48px;
+	height: 48px;
+	font-size: 12px;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	padding: 0 26px;
+	background: #fff;
+	position: absolute;
+	bottom: 85px;
+	margin-left: -66px;
+}
+#ad .ad-button:hover{
+	background: #333;
+	color: #fff;
+}
+/* 广告 */
+/* 品类 */
+#class{
+	width: 100%;
+}
+#class li{
+	width: 32%;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+#class li a{
+	display: block;
+}
+#class img{
+	width: 100%;
+}
+#class p{
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(80,181,0,0.6);
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-top: 28%;
+	opacity: 0;
+	transition: all 500ms;
+	vertical-align: middle;
+}
+#class li:hover p{
+	opacity: 1;
+}
+/* 品类 */
+/* 新品 */
+#news{
+	padding-top: 25px;
+	padding-bottom: 80px;
+}
+#news>ul{
+	width: 264px;
+	line-height: 45px;
+	padding: 0 15px;
+	font-size: 16px;
+}
+#news .news-title{
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	line-height: 64px;
+}
+#news>ul a:hover{
+	color: #50B600;
+}
+.news-right{
+	width: 876px;
+	height: 784px;
+}
+#news .news-right>p{
+	text-align: center;
+	line-height: 1;
+	margin: 25px 0 5px;
+}
+.item-card{
+	height: 359px;
+	width: 262px;
+	padding: 0 15px;
+	font-size: 14px;
+	position: relative;
+	float: left;
+}
+.item-card>a{
+	display: block;
+}
+.item-card .img{
+	position: relative;
+}
+.item-card img{
+	width: 262px;
+}
+.item-card .item-hover{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	transition: all 500ms;
+	background: rgba(80,181,0,0.6);
+	text-align: center;
+	line-height: 27px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	opacity: 0;
+}
+.item-hover p{
+	margin-top: 102px;
+}
+.item-hover i{
+	padding: 0 5px;
+}
+.item-card:hover .item-hover{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+.item-hover p:hover{
+	color: #000;
+}
+.item-hover i:hover{
+	color: #000;
+}
+.item-card h4{
+	line-height: 21px;
+	font-weight: normal;
+	padding-top: 21px;
+}
+.item-card h4:hover{
+	color: #50B600;
+}
+.item-card>a>p{
+	font-weight: bold;
+	color: #50B600;
+	margin-top: 13px;
+}
+.item-card>a>p>span{
+	text-decoration: line-through;
+	color: #817A7B;
+}
+/* 新品 */
+/* 促销 */
+.sale-left{
+	height: 428px;
+	width: 718px;
+	background: url(../images/time66.png) no-repeat 0 0;
+	padding-top: 99px;
+	padding-left: 47px;
+	color: #fff;
+	font-weight: bold;
+}
+.sale-left li{
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+.sale-left li>div{
+	width: 71px;
+	height: 71px;
+	border: 2px solid #fff;
+	border-radius: 36px;
+	line-height: 71px;
+	font-size: 24px;
+	margin-bottom: 6px;
+}
+.sale-left>p{
+	font-size: 80px;
+}
+.sale-left>div{
+	width: 134px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	font-size: 12px;
+	background: #50B600;
+	position: absolute;
+	left: 47px;
+	bottom: 104px;
+	transition: all 500ms;
+}
+.sale-left>div:hover{
+	color: #50B600;
+	background: #fff;
+}
+/* 左边 */
+.sale-right{
+	height: 527px;
+	width: 375px;
+	background: url(../images/banner33.png) no-repeat 0 0;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	line-height: 31px;
+}
+#sale .sale-right>div{
+	transition: all 500ms;
+}
+.sale-right .sale-right-top{
+	font-size: 60px;
+	margin-top: 203px;
+	line-height: 1;
+}
+#sale .sale-right>div:hover{
+	color: #50B600;
+}
+/* 右边 */
+/* 促销 */
+/* 主打产品 */
+#featured{
+	width: 100%;
+}
+.public-top{
+	height: 64px;
+	padding-top: 40px;
+	line-height: 64px;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+.featured-foot{
+	width: 100%;
+	height: 361px;
+	background: url(../images/parallax.png) no-repeat 0 0;
+	background-size: 100% 490px;
+	margin-top: 80px;
+	padding-top: 129px;
+}
+.featured-foot P{
+	line-height: 85px;
+	font-size: 64px;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 13px;
+}
+.featured-foot .wrap>div{
+	width: 134px;
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	background: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	transition: all 500ms;
+}
+.featured-foot .wrap>div:hover{
+	background: #50B600;
+	color: #fff;
+}
+/* 主打产品 */
+/* 特色 */
+#specials{
+	padding-bottom: 25px;
+}
+/* 特色 */
+/* 博客 */
+#blog{
+	width: 100%;
+}
+#blog ul{
+	width: 100%;
+}
+#blog li{
+	float: left;
+	width: 32.5%;
+	margin-right: 1.25%;
+}
+#blog li:nth-child(3){
+	margin-right: 0;
+}
+#blog img{
+	width: 100%;
+}
+#blog div{
+	height: 149px;
+	line-height: 36px;
+	font-size: 14px;
+	text-align: center;
+	padding: 19px 100px 0;
+}
+#blog h5{
+	font-size: 30px;
+	font-weight: normal;
+	transition: all 500ms;
+}
+#blog h5:hover{
+	color: #50B600;
+}
+#blog p{
+	line-height: 18px;
+}
+/* 博客 */
+/* 广告 */
+#banner{
+	width: 100%;
+}
+#banner>li{
+	height: 287px;
+	float: left;
+	width: 24.25%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+#banner>li a{
+	display: block;
+	width: 100%;
+}
+#banner>li:nth-child(4){
+	margin-right: 0;
+}
+#banner .banner-one{
+	background: #50B500;
+}
+#banner .banner-two{
+	background: #FAFAFA;
+}
+#banner .banner-three{
+	background: #FFE70D;
+}
+#banner .banner-four{
+	background: #FAFAFA;
+}
+#banner .banner-one a{
+	color: #fff;
+	height: 215px;
+	padding-top: 72px;
+}
+#banner .banner-two a{
+	height: 230px;
+	padding-top: 57px;
+}
+#banner .banner-three a{
+	color: #fff;
+	height: 197px;
+	padding-top: 90px;
+}
+#banner .banner-four a{
+	height: 230px;
+	padding-top: 57px;
+}
+#banner .title{
+	font-size: 36px;
+	letter-spacing: 0.1em;
+}
+#banner .content{
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 32px;
+	letter-spacing: 0.1em;
+}
+#banner .extra{
+	font-size: 50px;
+	letter-spacing: 0.1em;
+}
+#banner .banner-two .off{
+	font-size: 40px;
+	line-height: 50px;
+	color: #FFE70D;
+	letter-spacing: 0.1em;
+}
+#banner .banner-two .off:hover{
+	color:#50B500 ;
+}
+#banner .banner-four .off{
+	font-size: 40px;
+	line-height: 50px;
+	color: #50B500;
+	letter-spacing: 0.1em;
+}
+#banner .banner-four .off:hover{
+	color:#FFE70D ;
+}
+#banner strong{
+	display: block;
+	font-size: 24px;
+	margin-top: 7px;
+	margin-bottom: 31px;
+}
+/* 广告 */
+/* 底部 */
+#bottom{
+	width: 100%;
+	height: 345px;
+	padding-top: 37px;
+	background: #FAFAFA;
+}
+.bottom{
+	height: 345px;
+	width: 1170px;
+	font-size: 12px;
+}
+.bottom>li{
+	float: left;
+	width: 270px;
+	margin-right: 30px;
+}
+.bottom>li:nth-child(4){
+	margin-right: 0;
+}
+.bottom .title{
+	font-size: 14px;
+	line-height: 57px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+.bottom .company{
+	line-height: 21px;
+}
+.bottom>li li{
+	line-height: 21px;
+	margin-bottom: 7px;
+}
+.bottom a:hover{
+	color: #50B600;
+}
+#bottom .foot{
+	height: 50px;
+	width: 100%;
+	background: #000;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+}
+#bottom .foot a{
+	color: #fff;
+}
+#bottom .foot a:hover{
+	color: #50B600;
+}

@@ -1,0 +1,64 @@
+
+/* reset.css */
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+input,
+button,
+textarea{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 0;
+}
+body{
+	line-height: 1;
+}
+
+ul,li{
+	list-style: none;
+}
+
+input,button{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+/* 常用类 */
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.rl{
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
